@@ -19,11 +19,11 @@ In addition to the WinUI3 solution, a UWP solution is also provided under the Wi
 
 - [Issue #6. FileOpenPicker - PickMultipleFilesAsync crashes application](https://github.com/microsoft/ProjectReunion/issues/731)
 
-- [Issue #7. Using "ExtendsContentIntoTitleBar" with Background Color Hides Min/Max/Close Buttons](https://github.com/microsoft/microsoft-ui-xaml/issues/)
+- [Issue #7. Using "ExtendsContentIntoTitleBar" with Background Color Hides Min/Max/Close Buttons](https://github.com/microsoft/microsoft-ui-xaml/issues/4835)
 
-- [Issue #8. CommandBar with AppBarButton with Flyout displays ">" symbol](https://github.com/microsoft/microsoft-ui-xaml/issues/)
+- [Issue #8. CommandBar with AppBarButton with Flyout displays ">" symbol](https://github.com/microsoft/microsoft-ui-xaml/issues/4836)
 
-- [Issue #9. Flyout Closes when Combo Box clicked](https://github.com/microsoft/microsoft-ui-xaml/issues/)
+- [Issue #9. Flyout Closes when Combo Box clicked](https://github.com/microsoft/microsoft-ui-xaml/issues/4837)
 
 ![WinUIHome](https://user-images.githubusercontent.com/9272634/114936590-3cac9a80-9e02-11eb-94de-2d634ba184f1.PNG)
 

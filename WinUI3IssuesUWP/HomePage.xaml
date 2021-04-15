@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="WinUI3IssuesUWP.HomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WinUI3IssuesUWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0"
+                   Text="Home Page"
+                   FontWeight="Bold"
+                   Margin="10,5,0,0"/>
+
+        <TextBlock Grid.Row="1"
+                   x:Name="summaryTextBlock"
+                   Margin="10,10,0,0"
+                   IsTextSelectionEnabled="True"/>
+
+        <TextBlock Grid.Row="2"
+                   x:Name="issueTextBlock"
+                   Margin="10,10,0,0"
+                   IsTextSelectionEnabled="True"/>
+
+    </Grid>
+</Page>

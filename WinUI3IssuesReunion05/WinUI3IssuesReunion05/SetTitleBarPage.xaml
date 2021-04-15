@@ -1,0 +1,81 @@
+﻿<Page
+    x:Class="WinUI3IssuesReunion05.SetTitleBarPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WinUI3IssuesReunion05"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0"
+                   Text="SetTitleBar Page"
+                   FontWeight="Bold"
+                   Margin="10,10,0,0"/>
+
+        <TextBlock Grid.Row="1"
+                   x:Name="issueTextBlock"
+                   Margin="10,10,0,0"
+                   IsTextSelectionEnabled="True"/>
+
+        <StackPanel Grid.Row="2" 
+                    Margin="10,10,0,0"
+                    Orientation="Vertical" 
+                    HorizontalAlignment="Left" 
+                    VerticalAlignment="Top">
+
+            <StackPanel Orientation="Horizontal">
+                
+                <Button x:Name="colorButton"
+                        Margin="0,10,0,0"
+                        Content="Color Background TitleBar"
+                        Click="colorButton_Click"/>
+
+                <TextBlock Margin="10,15,0,0"
+                           Text="Background color visible but action buttons unavailable"/>
+
+            </StackPanel>
+
+            <TextBlock x:Name="colorCodeTextBlock" 
+                       Margin="10,0,0,0"/>
+
+            <StackPanel Orientation="Horizontal">
+                
+                <Button x:Name="defaultButton"
+                        Margin="0,10,0,0"
+                        Content="Default Background TitleBar"
+                        Click="defaultButton_Click"/>
+
+                <TextBlock Margin="10,15,0,0"
+                           Text="Action buttons unavailable"/>
+                
+            </StackPanel>
+
+            <TextBlock x:Name="noColorCodeTextBlock" 
+                       Margin="10,0,0,0"/>
+
+            <StackPanel Orientation="Horizontal">
+
+                <Button x:Name="offButton"
+                        Margin="0,10,0,0"
+                        Content="Set Title Bar Off"
+                        Click="offButton_Click"/>
+
+                <TextBlock Margin="10,15,0,0"
+                           Text="Action buttons available"/>
+                
+            </StackPanel>
+
+            <TextBlock x:Name="offCodeTextBlock" 
+                       Margin="10,0,0,0"/>
+
+        </StackPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,54 @@
+﻿<Page
+    x:Class="WinUI3IssuesUWP.DialogsAndFlyoutsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WinUI3IssuesUWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0"
+                   Text="Dialogs and Flyouts Page"
+                   FontWeight="Bold"
+                   Margin="10,10,0,0"/>
+
+        <TextBlock Grid.Row="1"
+                   x:Name="issueTextBlock"
+                   Margin="10,10,0,0"
+                   IsTextSelectionEnabled="True"/>
+
+        <StackPanel Grid.Row="2"
+                    Orientation="Horizontal"
+                    Margin="10,10,0,0">
+
+            <Button x:Name="testflyoutButton"
+                    Grid.Row="1"
+                    Margin="10,0,0,0"
+                    Content="Test Flyout">
+                <Button.Flyout>
+                    <Flyout x:Name="testFlyout"
+                            Opening="testFlyout_Opening">
+                        <TextBlock x:Name="textFlyoutText"
+                                   IsTextSelectionEnabled="True"
+                                   Text="Sample Text"/>
+                    </Flyout>
+                </Button.Flyout>
+            </Button>
+
+            <Button x:Name="testContentDialog"
+                    Margin="20,0,0,0"
+                    Content="Test Content Dialog"
+                    Click="testContentDialog_Click"/>
+
+        </StackPanel>
+
+    </Grid>
+</Page>
